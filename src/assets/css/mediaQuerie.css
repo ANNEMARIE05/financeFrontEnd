@@ -1,0 +1,29 @@
+@media (max-width: 905px) {
+    .headerP p{
+        margin: .2rem;
+    }
+    .headerBtn button {
+        margin: 0 0.2rem;
+        height: 30px;
+        width: 100px;
+    }
+}
+@media (max-width: 620px) {
+    .accueilHead h2{
+        font-size: 1.1rem;
+        margin-top: .5rem;
+    }
+    .headerP p {
+       font-size: .8rem;
+       margin-top: .8rem;
+    }
+    .headerBtn button {
+        margin: 0 0.2rem;
+        height: 30px;
+        width: 70px;
+        margin-top: .5rem;
+        font-size: .5rem;
+        height: 25px;
+        flex-wrap: wrap;
+    }
+}
