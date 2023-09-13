@@ -1,52 +1,83 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Josefin+Sans:wght@400;700&family=Lobster&family=Pacifico&family=Qwitcher+Grypen:wght@700&family=Rubik:wght@400;500;700&family=Space+Grotesk&display=swap');
+
+
+nav{
+    background-color: #000;
+    color: #FFF;
+    position: sticky;
+
+}
 .accueilHead{
-    width: 100%;
+    width: 1400px;
     height: 90px;
-    padding: 1.5rem;
-    background-color: black;
+    background-color: #0000;
     display: flex;
     justify-content: space-between;
-    color: #FFF;
-    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
 }
+.accueilHead i{
+    visibility: hidden;
+}
+.accueilHead h1{
+    font-family: 'Black Ops One', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Qwitcher Grypen', cursive;
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Signika Negative', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
+    margin-top: 30px;
+}
+
 .headerP{
+    margin-top: 30px;
     display: flex;
     justify-content: space-between;
 }
 .headerP p{
-   margin: 0 1.5rem;
-   font-size: 1.2rem;
+    margin: 0 20px;
+    font-size: 1.3rem;
+    font-family: 'Black Ops One', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Qwitcher Grypen', cursive;
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Signika Negative', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
+    
 }
 .headerBtn{
-    display: flex; 
+    margin-top: 25px;
 }
 .headerBtn button{
-    margin: 0 .4rem;
-    height: 50px;
     width: 150px;
-    background: none;
-    color: #FFF;
-    border-radius: 5px;
+    margin: 0 10px;
+    height: 45px;
     border: 1px solid #FFF;
+    border-radius: 10px;
+    color: #FFF;
+    font-size: 1rem;
+    background: none;
 }
+.headerBtn button:hover{
+    color: #000;
+    background-color: #FFF;
+    font-size: 1.2rem;
+}
+.Accueilmenu{
+    width: 100%;
+    background-color: #000;
+    height: 100vh;
+    background: url(../images/fond.png);
+    background-size: cover;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
+.AccueilmenuTest{
+    width: 50%;
+}
+.AccueilmenuTest h1{
+    margin: 22rem 22rem 0;
+}

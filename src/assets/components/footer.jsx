@@ -5,7 +5,9 @@ import '../css/footer.css'
 export default function Footer() {
     return(
         <>
-        <h1>My Footer</h1>
+            <div className="footer">
+                <p>© 2023 Copyright:</p>
+            </div>
         </>
     )
 }
