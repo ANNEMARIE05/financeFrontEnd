@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Josefin+Sans:wght@400;700&family=Lobster&family=Pacifico&family=Qwitcher+Grypen:wght@700&family=Rubik:wght@400;500;700&family=Space+Grotesk&display=swap');
+
+
+.clientnavbar{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    height: 8vh;
+    padding-top: 2.5vh;
+    font-family: 'Black Ops One', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Qwitcher Grypen', cursive;
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Signika Negative', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
+}
+.clientUL ul{
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+}
+.clientUL ul li{
+    margin: 0 2rem;
+    font-size: 1.2rem;
+    color: #FFF;
+    
+}
+.clientUL ul li a{
+    color: #FFF;
+}
+a{
+    text-decoration: none;
+}

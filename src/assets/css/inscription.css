@@ -12,7 +12,8 @@
 }
 .inscrire{
     width: 700px;
-    margin-top: 5rem;
+    padding-top: 2rem;
+    margin: 0 auto;
 }
 .inpt{
     width: 100%;

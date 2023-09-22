@@ -1,0 +1,34 @@
+.cardPlateforme{
+    display: flex;
+    width: 100%;
+}
+.plateformeCard1{
+    text-align: center;
+    background-color: black;
+    width: 150px;
+    position: fixed;
+    height: 100vh;
+    padding-top: 3rem;
+    color: #FFF;
+}
+.plateformeCard2{
+    padding: 2rem;
+    width: 100%;
+    background-color: aqua;
+}
+.emoji{
+    margin-top: 17rem;
+    text-align: center;
+    color: #FFF;
+}
+a{
+    color: #FFF;
+}
+.emoji i{
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+}
+.deconnexion{
+    margin-top: 13rem;
+    font-size: 1.5rem;
+}

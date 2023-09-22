@@ -1,0 +1,40 @@
+.containerHistorique{
+    width: 70%;
+    height: 20vh;
+    margin: 4vh auto ;
+    box-shadow: 0 0 11px #EDEDED;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+.containerHistorique h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #dad9d9;
+}
+.vide{
+    height: 15rem;
+}
+
+@media (max-width: 1200px){
+    .clientnavbar {
+        width: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+    .clientnavbar .clientUL ul li a{
+        font-size: 1.1rem;
+    }
+    .clientnavbar h1{
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 590px) {
+    .clientnavbar .clientUL ul li a{
+        font-size: 0.8rem;
+    }
+    .clientnavbar h1{
+        font-size: 0.8rem;
+    }
+    /* .clientnavbar {
+    }  */
+}
