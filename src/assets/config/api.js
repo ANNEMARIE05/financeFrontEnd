@@ -1,1 +1,1 @@
-export const API_IP = "http://localhost:5173/"
+export const API_IP = "http://localhost:5173"

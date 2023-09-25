@@ -1,64 +1,65 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
-import { useState } from "react";
-import axios from "axios";
-import "../css/inscription.css"
-import { Link } from "react-router-dom";
-import { API_IP } from "../config/api";
+import React, { useState } from 'react';
+import { API_IP } from '../config/api';
+import axios from 'axios';
 
 
+function Inscription() {
+  const [formData, setFormData] = useState({
+    email: '',
+    password: '',
+  });
 
-export default function Register() {
-    const navigate = useNavigate();
-    const [nom, setNom] = useState('');
-    const [email, setEmail] = useState("");
-    const [contact, setContact] = useState("");
-    const [password, setPassword] = useState("");
-    const [error, setError] = useState("")
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
 
-    const createClient = (e) =>{
-        e.preventDefault();
-        if(nom !== ''){
-            axios.post(`${API_IP}client`, {nom, prenom, email, phone: contact , password})
-            .then((response) => {
-                if(response.status === 201){
-                    localStorage.setItem("userToken", response.data.token)
-                    localStorage.setItem("email", response.data.message.email)
-                    console.log("Reponse : ", response.data)
-                    navigate('/', {replace: true})
-                }else {
-                    setError('Email ou mot de passe incorrect')
-                }
-            })
-            .catch((error) => console.log(error))
-        }else{
-            setError('Renseigner tous les champs !!')
-        }
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await axios.post(`${API_IP}/inscription`, formData);
+
+      if (response.status === 201) {
+        // Redirigez l'utilisateur vers la page de connexion ou effectuez d'autres actions nécessaires
+      }
+    } catch (error) {
+      console.log('Erreur lors de l\'inscription', error);
     }
-    return(
-        <>
-            <body className="body">
-                <form action="" className="registre" method='post' onSubmit={(e) => createClient(e)}>
-                    <div className="inscrire">
-                        <div className="entete">
-                            <h1>Inscription</h1>
-                            <Link to={"/login"}><h1>Vous êtes déjà inscrite ? Connectez-vous ici.</h1></Link>
-                        </div>
-                        <div className="inpt">
-                            <label htmlFor="">Nom & Prenom</label>
-                            <input type="text" onChange={(e) => setNom(e.target.value)} id='nom' placeholder="Entrez votre nom ici"  />
-                            <label htmlFor="">Email</label>
-                            <input type="email" onChange={(e) => setEmail(e.target.value)} placeholder="@gmail.com" id='email' />
-                            <label htmlFor="">Numero</label>
-                            <input type="text" onChange={(e) => setContact(e.target.value)} placeholder="+225" id='contact'/>
-                            <label htmlFor="">Mot de passe</label>
-                            <input type="password" onChange={(e) => setPassword(e.target.value)} placeholder="******" id='password' />
-                            <Link to={"/login"} ><button type='submit'>S'incrire</button></Link>
-                            <div className="h5 text-danger">{error}</div>
-                        </div>
-                    </div>
-                </form>
-           </body>
-        </>
-    )
+  };
+
+  return (
+    <div>
+      <h2>Inscription</h2>
+      <form onSubmit={handleSubmit}>
+        <div>
+          <label>Email</label>
+          <input
+            type="text"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div>
+          <label>Mot de passe:</label>
+          <input
+            type="password"
+            name="password"
+            value={formData.password}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div>
+          <button type="submit">S'inscrire</button>
+        </div>
+      </form>
+    </div>
+  );
 }
+
+export default Inscription;
