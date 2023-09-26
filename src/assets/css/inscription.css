@@ -1,82 +1,71 @@
-.body{
+.inscription{
+    width: 25%;
+    margin: auto;
     background-color: #000;
-    color: #FFF;
+    font-family: 'Black Ops One', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Qwitcher Grypen', cursive;
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Signika Negative', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
+}
+form{
+    width: 100%;
+    margin-top: 10rem;
+    
+}
+.inscrireLink{
     position: relative;
-    font-family: Arial, Helvetica, sans-serif;
-    height: 100vh;
-}
-.registre{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-.inscrire{
-    width: 700px;
-    padding-top: 2rem;
-    margin: 0 auto;
-}
-.inpt{
-    width: 100%;
-    color: #FFF;
-    padding: 2rem;
-}
-.inpt input{
-    color: #FFF;
-    width: 100%;
-    padding: 0.7rem;
-    height: 60px;
-    margin: 1.3rem 0;
-    background: none;
-    border-radius: 4px;
-    border: 1.5px solid #FFF;
-}
-.inpt input[type="date"]{
-    color: #FFF;
-}
-.inpt input::placeholder{
-    color: #ffffff77;
+    top: 8rem;
+    text-align: center;
     font-size: 1.1rem;
 }
-.entete{
-    text-align: center;
+.inscrireLink:hover{
+    color: #ffffffac;
 }
-.entete a{
-    color: #FFF;
-    text-decoration: none;
-}
-.entete a h1{
-    font-weight: 100;
-    font-size: 1.5rem;
-    margin-top: 1.5rem;
-}
-.inpt label{
-    font-size: 1.3rem
-
-}
-.inpt button{
-    width: 100%;
-    height: 65px;
-    background-color: #FFF;
-    border-radius: 10px;
-    border: 1px solid #FFF;
-    font-size: 1.2rem;
-}
-.inpt button:hover{
-    border: 1px solid #FFF;
-    color: #FFF;
+.inscrireBody{
     background-color: #000;
-}
-.inpt p{
-    margin-top: 5rem;
-    text-align: center;
-    font-size: 1.5rem;
-}
-.texte{
-    font-weight: 100;
-    font-size: 1.5rem;
-    margin-top: 1.5rem;
-}
-.inpt .liens{
+    height: 100vh;
     color: #FFF;
-    text-decoration: none;
+}
+.inscription input{
+    width: 100%;
+    height: 50px;
+    margin: 1rem 0;
+    padding: 1rem;
+    font-size: 1.1rem;
+}
+.inscription h1{
+    text-align: center;
+    position: relative;
+    top: 5rem;
+}
+.inscription label{
+    font-size: 1.2rem;
+    margin-left: .3rem;
+}
+.inscription button{
+    height: 60px;
+    margin: 1rem 0;
+    width: 100%;
+    background-color: #FFF;
+    color: #000;
+    border-radius: 5px;
+    border: none;
+}
+.inscription button:hover{
+    background-color: #000;
+    color: #FFF;
+    border: 1px solid #ffffff49;
+}
+.connectLink{
+    position: relative;
+    top: 15vh;
+    text-align: center;
+    font-size: 1.1rem;
+}
+.connectLink a:hover{
+    color: #ffffffac;
 }
