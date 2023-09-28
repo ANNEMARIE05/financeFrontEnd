@@ -38,7 +38,7 @@ function Register() {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:3000/api/user/",
+        "https://finance-backend-mt66.onrender.com",
         {
           ...inputValue,
         },
