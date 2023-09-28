@@ -38,7 +38,7 @@ function Register() {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "https://finance-backend-mt66.onrender.com",
+        "https://finance-backend-mt66.onrender.com/user/",
         {
           ...inputValue,
         },
