@@ -20,7 +20,21 @@ export default function PlateformeAdmin() {
                     <Link><i class="fa-solid fa-arrow-right-from-bracket"></i></Link>
                 </div>
             </div>
-            <div className="plateformeCard2"></div>
+            <div className="plateformeCard2">
+                <div className="cardAdmin">
+                    <h1>Bienvenue cher admin</h1>
+                </div>
+                <div className="plateCard">
+                    <div>
+                        <h1>CLIENTS</h1>
+                        <p>20</p>
+                    </div>
+                    <div>
+                        <h1>SOLDES</h1>
+                        <p>1230000 FCFA</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </>
     )
