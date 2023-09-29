@@ -23,13 +23,13 @@ function Register() {
     try {
       const response = await axios.post('http://localhost:3000/api/user/register', formData);
 
-      if (response.data.success) {
+      if (response.data.success()) {
         console.log('Inscription réussie');
         // Redirection vers une page de connexion par exemple
         // history.push('/login');
       } else {
         // L'inscription a échoué, afficher un message d'erreur.
-        console.error('Erreur lors de l\'inscription:', response.data.message);
+        console.log('Erreur lors de l\'inscription:', response.data.message);
       }
     } catch (error) {
       console.error('Erreur réseau lors de l\'inscription:', error, formData);

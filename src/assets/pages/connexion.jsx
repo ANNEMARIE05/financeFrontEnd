@@ -88,6 +88,7 @@ function Login() {
         </div>
         <p className='connectLink'><Link to="/register">Pas encore inscrit ? Inscris-toi !</Link></p>
         <p className='connectLink'><Link to="/historiqueClient">client</Link></p>
+        <p className='connectLink'><Link to="/plateformeAdmin">Admin</Link></p>
       </form>
     </div>
     </body>
